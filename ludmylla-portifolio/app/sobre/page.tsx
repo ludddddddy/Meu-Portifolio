@@ -1,4 +1,4 @@
-export default function sobre() {
+export default function Sobre() {
   return (
     <main className="min-h-screen flex flex-col justify-center bg-gradient-to-br from-[#2b0b5c] via-[#4b0d7a] to-[#c84aeb] text-white py-20">
       <div className="container-max space-y-12">
