@@ -1,30 +1,39 @@
-export default function Projetos() {
-  const projetos = [
-    {
-      titulo: "Identidade Visual – Projeto X",
-      descricao: "Criação de marca e identidade visual.",
-      link: "https://www.behance.net/ludmylladias1"
-    },
-    {
-      titulo: "Ilustração Digital – Série Y",
-      descricao: "Série de ilustrações digitais com estilo minimalista.",
-      link: "https://www.behance.net/ludmylladias1"
-    }
-  ];
+import Link from "next/link";
 
+const projetos = [
+  {
+    title: "Branding · Projeto X",
+    description: "Identidade visual e aplicações — logotipo, mockups e guidelines.",
+    url: "https://www.behance.net/ludmylladias1"
+  },
+  {
+    title: "Ilustração · Série Y",
+    description: "Coleção de ilustrações digitais com paleta roxa e rosa.",
+    url: "https://www.behance.net/ludmylladias1"
+  },
+  {
+    title: "Social Media · Campanha Z",
+    description: "Artes para redes sociais com foco em engajamento e storytelling.",
+    url: "https://www.behance.net/ludmylladias1"
+  }
+];
+
+export default function Projetos() {
   return (
-    <main className="p-10">
-      <h1 className="text-3xl font-bold mb-4">Projetos Desenvolvidos</h1>
-      <div className="grid md:grid-cols-2 gap-6">
-        {projetos.map((p, i) => (
-          <div key={i} className="border border-gray-700 p-4 rounded-lg hover:bg-gray-800 transition">
-            <h2 className="text-xl font-semibold">{p.titulo}</h2>
-            <p className="text-gray-400 mt-2">{p.descricao}</p>
-            <a href={p.link} target="_blank" className="text-blue-400 mt-3 inline-block underline">
-              Ver no Behance →
-            </a>
-          </div>
-        ))}
+    <main className="py-12">
+      <div className="container-max">
+        <h1 className="text-3xl font-semibold mb-6">Projetos Desenvolvidos</h1>
+        <div className="grid md:grid-cols-2 gap-6">
+          {projetos.map((p, idx) => (
+            <article key={idx} className="card p-6 hover:scale-[1.01] transition-transform">
+              <h3 className="text-xl font-medium">{p.title}</h3>
+              <p className="mt-2 opacity-90 text-sm">{p.description}</p>
+              <div className="mt-4">
+                <a href={p.url} target="_blank" rel="noreferrer" className="text-sm underline">Ver no Behance →</a>
+              </div>
+            </article>
+          ))}
+        </div>
       </div>
     </main>
   );

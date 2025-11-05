@@ -1,21 +1,61 @@
-
+/* Tailwind v4 modern import */
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* Root tokens */
+:root{
+  --bg-left: #2b0b5c;
+  --bg-right:#c84aeb;
+  --accent: #ff5da2;
+  --text-contrast: #ffffff;
 }
 
+/* subtle film grain texture (data URI) */
+html::before {
+  content: "";
+  pointer-events: none;
+  position: fixed;
+  inset: 0;
+  background-image: radial-gradient(rgba(255,255,255,0.02) 1px, transparent 1px);
+  background-size: 3px 3px;
+  mix-blend-mode: overlay;
+  z-index: 50;
+  opacity: 0.25;
+}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* body baseline */
+html, body, #__next {
+  height: 100%;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Arial";
+  color: var(--text-contrast);
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(120deg, var(--bg-left) 0%, var(--bg-right) 60%);
 }
+
+/* container helper */
+.container-max {
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+/* subtle card */
+.card {
+  background: rgba(255,255,255,0.04);
+  border-radius: 12px;
+  padding: 1rem;
+  border: 1px solid rgba(255,255,255,0.04);
+  box-shadow: 0 8px 30px rgba(0,0,0,0.45);
+}
+
+/* small responsive helpers */
+@media (max-width: 768px){
+  .container-max { padding-left: 1rem; padding-right: 1rem; }
+}
+
