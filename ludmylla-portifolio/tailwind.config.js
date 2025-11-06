@@ -7,13 +7,27 @@ export default {
   theme: {
     extend: {
       colors: {
-        brand1: '#5a27b6', // roxo escuro
-        brand2: '#9b4ffb', // roxo claro
-        accent: '#ff5da2', // rosa quente
+        brand: {
+          50: '#faf5ff',
+          100: '#f3e8ff',
+          500: '#a855f7',
+          600: '#9333ea',
+          700: '#7c3aed',
+          800: '#6b21a8',
+          900: '#581c87',
+        }
       },
       fontFamily: {
-        display: ['"Playfair Display"', 'serif'],
-        sans: ['Inter', 'ui-sans-serif', 'system-ui']
+        sans: ['Inter', 'system-ui', 'sans-serif'],
+      },
+      animation: {
+        'float': 'float 6s ease-in-out infinite',
+      },
+      keyframes: {
+        float: {
+          '0%, 100%': { transform: 'translateY(0px)' },
+          '50%': { transform: 'translateY(-20px)' },
+        }
       }
     }
   },

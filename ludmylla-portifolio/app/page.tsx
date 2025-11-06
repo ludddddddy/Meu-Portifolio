@@ -1,58 +1,42 @@
-"use client";
 import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="min-h-screen flex items-center justify-center bg-gradient-to-br from-[#2b0b5c] via-[#4b0d7a] to-[#c84aeb] text-white">
-      <section className="container-max flex flex-col md:flex-row items-center justify-between gap-12 py-20">
-        
-        {/* Texto à esquerda */}
-        <div className="flex-1 text-left space-y-6">
-          <h1 className="text-[4rem] md:text-[6rem] font-extrabold leading-none tracking-tight drop-shadow-md">
-            <span className="block text-white">Ludmylla</span>
-            <span className="block text-fuchsia-300">Dias</span>
-          </h1>
+    <section className="flex flex-col-reverse md:flex-row items-center justify-between px-8 md:px-24 py-20 text-white">
+      {/* Texto principal */}
+      <div className="max-w-xl text-center md:text-left space-y-6">
+        <h1 className="text-5xl md:text-7xl font-extrabold leading-tight">
+          Olá, sou <span className="text-pink-300">Ludmylla Dias</span>
+        </h1>
+        <h2 className="text-2xl md:text-3xl font-semibold text-white">
+          Designer e Desenvolvedora Frontend apaixonada por experiências criativas.
+        </h2>
+        <p className="text-lg text-white/90 leading-relaxed">
+          Transformo ideias em interfaces únicas e funcionais, unindo estética, propósito e tecnologia para criar soluções digitais com impacto positivo.
+        </p>
+        <a
+          href="/projetos"
+          className="inline-block mt-4 px-6 py-3 bg-white text-purple-700 font-bold rounded-full hover:bg-pink-300 hover:text-white transition-all"
+        >
+          Ver meus projetos
+        </a>
+      </div>
 
-          <p className="text-2xl md:text-3xl font-medium text-white/90">
-            Criando o digital com arte
-          </p>
-
-          <div className="flex flex-wrap gap-4 mt-8">
-            <a
-              href="/projetos"
-              className="px-8 py-3 bg-white text-purple-800 font-semibold rounded-full shadow-md hover:bg-fuchsia-200 transition"
-            >
-              Ver Projetos
-            </a>
-            <a
-              href="https://www.behance.net/ludmylladias1"
-              target="_blank"
-              rel="noreferrer"
-              className="px-8 py-3 border border-white rounded-full text-white hover:bg-white/10 transition"
-            >
-              Behance
-            </a>
-          </div>
-
-          <p className="italic text-lg text-white/80 mt-10">
-            Criatividade é a melhor forma de improviso
-          </p>
+      {/* Foto circular */}
+      <div className="flex justify-center md:justify-end mb-12 md:mb-0">
+        <div className="w-[260px] h-[260px] md:w-[360px] md:h-[360px] rounded-full overflow-hidden border-4 border-white/30 shadow-[0_0_40px_rgba(200,74,235,0.5)]">
+          <Image
+            src="/lud.png"
+            alt="Ludmylla Dias"
+            
+            width={360}
+            height={360}
+            className="object-cover object-center w-full h-full"
+            priority
+          />
         </div>
-
-        {/* Foto à direita */}
-        <div className="flex-1 flex justify-center md:justify-end">
-          <div className="relative w-64 h-64 md:w-96 md:h-96 rounded-full overflow-hidden border-4 border-white/30 shadow-[0_0_60px_-10px_rgba(255,255,255,0.4)]">
-            <Image
-              src="/minha-foto.png"
-              alt="Foto de Ludmylla Dias"
-              width={400}
-              height={400}
-              className="object-cover w-full h-full"
-            />
-          </div>
-        </div>
-
-      </section>
-    </main>
+      </div>
+    </section>
   );
 }
+
