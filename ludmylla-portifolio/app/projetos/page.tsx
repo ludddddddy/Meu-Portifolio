@@ -4,17 +4,17 @@ const projetos = [
   {
     title: "Identidade visual - CAJU",
     description: "Identidade visual e aplicações — logotipo, mockups e guidelines.",
-    url: "https://www.behance.net/ludmylladias1"
+    url: "https://www.behance.net/gallery/231939779/CAJU-TROPICAL"
   },
   {
     title: "UX/UI - CARE+",
     description: "Desenvolvimento de marca e UX/UI de aplicação.",
-    url: "https://www.behance.net/ludmylladias1"
+    url: "https://www.behance.net/gallery/231924751/CARE"
   },
   {
     title: "UX/UI - WasteZero",
     description: "Desenvolvimento de marca e UX/UI de aplicação.",
-    url: "https://www.behance.net/ludmylladias1"
+    url: "https://www.behance.net/gallery/232076929/WASTEZERO"
   }
 ];
 
