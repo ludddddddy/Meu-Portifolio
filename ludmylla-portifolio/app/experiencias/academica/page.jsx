@@ -2,21 +2,22 @@ import Link from "next/link";
 
 const experienciasAcademicas = [
   {
-    title: "Graduação em Design Digital",
+    title: "Graduação em Tecnologia de Sistemas para internet- Universidade Católica de Pernambuco",
     description:
-      "Formação focada em criação de interfaces, UX/UI, identidade visual e desenvolvimento frontend.",
+      "Formação focada no desenvolvimento de aplicações, UX/UI,  backend e desenvolvimento frontend.",
   },
   {
-    title: "Pesquisa em Experiência do Usuário",
+    title: "Técnico em Desenvolvimento de Sistemas",
     description:
-      "Estudo sobre design emocional, acessibilidade e arquitetura da informação aplicada a produtos digitais.",
+      "Estudo sobre lógica de programação, desenvolvimento e arquitetura da informação.",
   },
   {
-    title: "Projetos Interdisciplinares",
+    title: "Projetos Autodidatas",
     description:
       "Desenvolvimento de produtos digitais com foco em sustentabilidade e impacto social positivo.",
   },
 ];
+
 
 export default function ExperienciaAcademica() {
   return (

@@ -5,10 +5,11 @@ export default function Sobre() {
         <header>
           <h1 className="text-5xl font-extrabold tracking-tight mb-2">Sobre Mim</h1>
           <p className="text-lg text-white/80 max-w-2xl">
-            Sou Ludmylla, designer e criadora digital com foco em identidade visual, ilustração e design para web. 
+            Sou Ludmylla, estudante com foco em designer e criadora digital com foco em identidade visual, ilustração e design para web. 
             Tenho como propósito transformar ideias em experiências visuais marcantes.
           </p>
         </header>
+
 
         <section className="grid md:grid-cols-2 gap-8">
           <div className="card p-8">
