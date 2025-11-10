@@ -2,20 +2,11 @@ import Link from "next/link";
 
 const experienciasProfissionais = [
   {
-    title: "Designer Gráfica e Frontend",
+    title: "Auxiliar Administrativo",
     description:
-      "Atuação no desenvolvimento de interfaces visuais e componentes interativos utilizando Figma e React.",
+      "Contribuição nas tarefas administrativas da empresa.",
   },
-  {
-    title: "Social Media Designer",
-    description:
-      "Criação de campanhas visuais para redes sociais, com foco em identidade e engajamento.",
-  },
-  {
-    title: "Freelancer Criativa",
-    description:
-      "Desenvolvimento de identidades visuais, sites e ilustrações personalizadas para marcas independentes.",
-  },
+  
 ];
 
 export default function ExperienciaProfissional() {
@@ -47,4 +38,5 @@ export default function ExperienciaProfissional() {
     </main>
   );
 }
+
 

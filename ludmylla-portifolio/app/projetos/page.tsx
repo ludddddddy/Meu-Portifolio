@@ -2,18 +2,18 @@ import Link from "next/link";
 
 const projetos = [
   {
-    title: "Branding · Projeto X",
+    title: "Identidade visual - CAJU",
     description: "Identidade visual e aplicações — logotipo, mockups e guidelines.",
     url: "https://www.behance.net/ludmylladias1"
   },
   {
-    title: "Ilustração · Série Y",
-    description: "Coleção de ilustrações digitais com paleta roxa e rosa.",
+    title: "UX/UI - CARE+",
+    description: "Desenvolvimento de marca e UX/UI de aplicação.",
     url: "https://www.behance.net/ludmylladias1"
   },
   {
-    title: "Social Media · Campanha Z",
-    description: "Artes para redes sociais com foco em engajamento e storytelling.",
+    title: "UX/UI - WasteZero",
+    description: "Desenvolvimento de marca e UX/UI de aplicação.",
     url: "https://www.behance.net/ludmylladias1"
   }
 ];
